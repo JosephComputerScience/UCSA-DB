@@ -1,0 +1,19 @@
+{
+  "name": "ucsa-db",
+  "version": "1.0.0",
+  "description": "UCSA DB migrations and scripts",
+  "main": "index.ts",
+  "scripts": {
+    "migrations": "knex migrate:latest"
+  },
+  "author": "Joseph Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^3.1.0",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
