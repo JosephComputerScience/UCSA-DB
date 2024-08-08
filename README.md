@@ -26,7 +26,7 @@ To change the config environment in `config/config.ts` just set the global env `
 
 `npm install -g ts-node`
 
-`knex migrate: make <migration description> -x ts`
+`knex migrate:make <migration description> -x ts`
 
 # Run Migrations
 
