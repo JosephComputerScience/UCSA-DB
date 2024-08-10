@@ -9,6 +9,7 @@ export async function up(knex: Knex): Promise<void> {
     table.string('summonerId').notNullable();
     table.integer('summonerLevel').notNullable();
     table.integer('profileIconId').notNullable();
+    table.string('puuid').notNullable();
     table.dateTime('updatedAt').notNullable();
     table.primary(['summoner', 'tag']);
   });
