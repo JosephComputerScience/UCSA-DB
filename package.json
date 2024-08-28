@@ -4,7 +4,10 @@
   "description": "UCSA DB migrations and scripts",
   "main": "index.ts",
   "scripts": {
-    "migrations": "knex migrate:latest"
+    "migrations": "knex migrate:latest",
+    "create": "./scripts/docker/create_container.sh",
+    "rollback": "knex migrate:rollback",
+    "down": "knex migrate:down"
   },
   "author": "Joseph Nguyen",
   "license": "ISC",
