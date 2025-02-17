@@ -7,7 +7,8 @@ export async function up(knex: Knex): Promise<void> {
     table.string('tagLine').notNullable();
     table.string('accountId').notNullable();
     table.string('summonerId').notNullable();
-    table.json('metadata');
+    table.integer('summonerLevel');
+    table.integer('profileIconId');
     table.dateTime('updatedAt', { useTz: false }).notNullable();
     table.dateTime('lastManualUpdatedAt', { useTz: false }).notNullable();
     table.index(['summonerName', 'tagLine'], 'indxSummonerNameTagLine');
